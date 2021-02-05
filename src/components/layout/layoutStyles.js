@@ -11,6 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${colors.black};
     color: ${colors.white};
     font-family: Inter, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
   }
   
   .container {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterContainer, FooterTitle} from "components/footer/footerStyles";
+import {FooterContainer, FooterTitle, Mail} from "components/footer/footerStyles";
 
 const Footer = () => {
     return (
@@ -7,9 +7,9 @@ const Footer = () => {
             <FooterTitle>
                 Thank You.
             </FooterTitle>
-            <a href="mailto:nvnrtnl@gmail.com">
+            <Mail href="mailto:nvnrtnl@gmail.com">
                 nvnrtnl@gmail.com
-            </a>
+            </Mail>
         </FooterContainer>
     );
 };

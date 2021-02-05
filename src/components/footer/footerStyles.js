@@ -19,3 +19,12 @@ export const FooterTitle = styled.h3`
   }
 `
 
+export const Mail = styled.a`
+  margin: 0;
+  font-size: 16px;
+
+  @media (min-width: ${breakpoints.$screenMinSm}) {
+    font-size: 24px;
+  }
+`
+
