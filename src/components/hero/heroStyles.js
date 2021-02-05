@@ -26,3 +26,18 @@ export const MainTitle = styled.h1`
     font-size: 90px;
   }
 `
+
+export const SecondaryTitle = styled.h2`
+  font-size: 30px;
+  font-weight: bold;
+
+  @media (min-width: ${breakpoints.$screenMinXs}) {
+    font-size: 42px;
+  }
+  @media (min-width: ${breakpoints.$screenMinSm}) {
+    font-size: 60px;
+  }
+  @media (min-width: ${breakpoints.$screenMinMd}) {
+    font-size: 90px;
+  }
+`

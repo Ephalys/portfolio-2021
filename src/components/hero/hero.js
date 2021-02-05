@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeroContainer, MainTitle} from "components/hero/heroStyles";
+import {HeroContainer, MainTitle, SecondaryTitle} from "components/hero/heroStyles";
 
 const Hero = () => {
     return (
@@ -8,6 +8,9 @@ const Hero = () => {
                 I am Léon Tran-Van.<br/>
                 A web developer based in Paris.
             </MainTitle>
+            <SecondaryTitle>
+                Currently working at Hager, a leading supplier of solutions and services for electrical installations.
+            </SecondaryTitle>
         </HeroContainer>
     );
 };
