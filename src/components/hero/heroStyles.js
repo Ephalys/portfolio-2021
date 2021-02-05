@@ -2,17 +2,18 @@ import styled from "styled-components"
 import breakpoints from "styles/breakpoints"
 
 export const HeroContainer = styled.section`
-  padding-top: 240px;
+  padding-top: 270px;
   padding-bottom: 120px;
   
   @media (min-width: ${breakpoints.$screenMinMd}) {
-    padding-top: 280px;
+    padding-top: 300px;
   }
 `
 
 export const MainTitle = styled.h1`
   font-size: 30px;
   font-weight: bold;
+  margin: 0;
 
   @media (min-width: ${breakpoints.$screenMinXs}) {
     font-size: 42px;
@@ -20,13 +21,13 @@ export const MainTitle = styled.h1`
   @media (min-width: ${breakpoints.$screenMinSm}) {
     font-size: 60px;
   }
-  @media (min-width: ${breakpoints.$screenMinMd}) {
+  @media (min-width: ${breakpoints.$screenMinLg}) {
     font-size: 90px;
   }
 `
 
 export const SecondaryTitle = styled.h2`
-  margin-top: 60px;
+  margin: 60px 0 0;
   font-size: 30px;
   font-weight: bold;
 
@@ -37,7 +38,7 @@ export const SecondaryTitle = styled.h2`
   @media (min-width: ${breakpoints.$screenMinSm}) {
     font-size: 60px;
   }
-  @media (min-width: ${breakpoints.$screenMinMd}) {
+  @media (min-width: ${breakpoints.$screenMinLg}) {
     font-size: 90px;
   }
 `
