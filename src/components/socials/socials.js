@@ -4,6 +4,7 @@ import Spotify from "../../images/icon-spotify.svg";
 import Mail from "../../images/icon-email.svg";
 import Git from "../../images/icon-github.svg";
 import {Link, SocialContainer} from "./socialsStyles"
+import colors from "styles/colors";
 
 const Socials = () => {
     const links = [
@@ -37,6 +38,7 @@ const Socials = () => {
                     <link.icon
                         width={18}
                         height={18}
+                        fill={colors.white}
                     />
                 </Link>
             ))}

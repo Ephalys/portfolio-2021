@@ -1,11 +1,9 @@
 import * as React from "react"
-import Socials from "components/socials/socials";
+import Layout from "components/layout/layout";
 
 const IndexPage = () => {
   return (
-    <main>
-      <Socials/>
-    </main>
+    <Layout/>
   )
 }
 
