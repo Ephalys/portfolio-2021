@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
+    'gatsby-plugin-resolve-src',
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -16,5 +17,13 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
+    }
   ],
 };
