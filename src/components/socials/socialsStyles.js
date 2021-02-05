@@ -11,7 +11,11 @@ export const SocialContainer = styled.nav`
   align-items: center;
 `
 
-
 export const Link = styled.a`
   padding: 15px 0;
+  transition: padding .5s;
+  &:hover {
+    padding-left: 10px;
+    transition: padding .5s;
+  }
 `
