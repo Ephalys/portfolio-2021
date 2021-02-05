@@ -36,8 +36,8 @@ const Socials = () => {
                     key={i}
                 >
                     <link.icon
-                        width={18}
-                        height={18}
+                        width={16}
+                        height={16}
                         fill={colors.white}
                     />
                 </Link>
