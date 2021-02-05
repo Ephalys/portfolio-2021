@@ -4,6 +4,7 @@ import "fontsource-inter/700.css"
 import Socials from "components/socials/socials";
 import Hero from "components/hero/hero";
 import {GlobalStyle} from "components/layout/layoutStyles";
+import Footer from "components/footer/footer";
 
 const Layout = () => {
     return (
@@ -12,6 +13,7 @@ const Layout = () => {
             <main>
                 <Socials/>
                 <Hero/>
+                <Footer/>
             </main>
         </React.Fragment>
     );

@@ -3,7 +3,7 @@ import {HeroContainer, MainTitle, SecondaryTitle} from "components/hero/heroStyl
 
 const Hero = () => {
     return (
-        <HeroContainer>
+        <HeroContainer className="container">
             <MainTitle>
                 I am Léon Tran-Van.<br/>
                 A web developer based in Paris.
