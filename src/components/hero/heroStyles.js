@@ -28,10 +28,12 @@ export const MainTitle = styled.h1`
 `
 
 export const SecondaryTitle = styled.h2`
+  margin-top: 60px;
   font-size: 30px;
   font-weight: bold;
 
   @media (min-width: ${breakpoints.$screenMinXs}) {
+    margin-top: 90px;
     font-size: 42px;
   }
   @media (min-width: ${breakpoints.$screenMinSm}) {

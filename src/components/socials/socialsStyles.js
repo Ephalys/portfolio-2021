@@ -1,7 +1,8 @@
 import styled from "styled-components"
+import breakpoints from "styles/breakpoints"
 
 export const SocialContainer = styled.nav`
-  position: fixed;
+  position: absolute;
   top: 30px;
   z-index: 999;
   display: flex;
@@ -9,6 +10,10 @@ export const SocialContainer = styled.nav`
   height: 100%;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: ${breakpoints.$screenMinSm}) {
+    position: fixed;
+  }
 `
 
 export const Link = styled.a`
