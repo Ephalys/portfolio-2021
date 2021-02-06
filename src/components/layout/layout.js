@@ -32,7 +32,7 @@ const Layout = () => {
                 <Socials/>
                 <Hero innerRef={heroRef}/>
                 <Story/>
-                <SingleImage alt="portrait" filename="portrait-1.png"/>
+                <SingleImage alt="portrait" filename="portrait.png"/>
                 <TextCentered/>
                 <Footer/>
             </main>
