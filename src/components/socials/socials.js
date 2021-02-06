@@ -1,13 +1,12 @@
-import React, {useEffect, useContext} from 'react';
+import React, {useContext} from 'react';
 import Linkedin from "../../images/icon-linkedin.svg";
 import Spotify from "../../images/icon-spotify.svg";
 import Mail from "../../images/icon-email.svg";
 import Git from "../../images/icon-github.svg";
 import {Link, SocialContainer} from "./socialsStyles"
-import colors from "styles/colors";
 import { ThemeContext } from 'styled-components';
 
-const Socials = (props) => {
+const Socials = () => {
     const themeContext = useContext(ThemeContext);
 
     const links = [

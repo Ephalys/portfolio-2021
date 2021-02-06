@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import "fontsource-inter/400.css"
 import "fontsource-inter/700.css"
 import Socials from "components/socials/socials";
@@ -10,20 +10,26 @@ import { lightTheme, darkTheme } from "styles/themes"
 
 const Layout = () => {
     const [theme, setTheme] = useState('light');
-    const themeToggler = () => {
-        theme === 'light' ? setTheme('dark') : setTheme('light')
+    const heroRef = useRef()
+
+    useEffect(() => {
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener("scroll", onScroll);
+    })
+
+    const onScroll =  () => {
+        const heroPos= heroRef.current.getBoundingClientRect().bottom;
+        (heroPos < 0 ) ? setTheme('dark') : setTheme('light')
     }
 
     return (
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-            <>
-                <GlobalStyle/>
-                <main>
-                    <Socials/>
-                    <Hero/>
-                    <Footer/>
-                </main>
-            </>
+            <GlobalStyle/>
+            <main>
+                <Socials/>
+                <Hero innerRef={heroRef}/>
+                <Footer/>
+            </main>
         </ThemeProvider>
     );
 };

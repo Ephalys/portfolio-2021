@@ -1,9 +1,9 @@
 import React from 'react';
 import {HeroContainer, MainTitle, SecondaryTitle} from "components/hero/heroStyles";
 
-const Hero = () => {
+const Hero = ({innerRef}) => {
     return (
-        <HeroContainer className="container">
+        <HeroContainer className="container" ref={innerRef}>
             <MainTitle>
                 I am Léon Tran-Van.<br/>
                 A web developer based in Paris.

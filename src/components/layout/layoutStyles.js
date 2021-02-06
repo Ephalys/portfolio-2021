@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components"
-import colors from "styles/colors"
 import breakpoints from "styles/breakpoints"
 
 export const GlobalStyle = createGlobalStyle`
@@ -12,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: Inter, Arial, sans-serif;
     margin: 0;
+    transition: all .8s;
   }
   
   a {
