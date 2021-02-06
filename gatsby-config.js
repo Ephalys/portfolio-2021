@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "portfolio-2021",
+    siteUrl: "nvnrtnl-mnu7sy25y.vercel.app"
   },
   plugins: [
     "gatsby-plugin-styled-components",
