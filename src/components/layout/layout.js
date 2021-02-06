@@ -8,7 +8,7 @@ import Footer from "components/footer/footer";
 import {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme } from "styles/themes"
 import Story from "components/story/story";
-import TextCentered from "components/me/textCentered";
+import TextCentered from "components/textCentered/textCentered";
 import SingleImage from "components/SingleImage/SingleImage";
 
 const Layout = () => {

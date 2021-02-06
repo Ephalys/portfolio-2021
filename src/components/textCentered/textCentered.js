@@ -1,5 +1,5 @@
 import React from 'react';
-import {MeContainer} from "components/me/textCenteredStyles";
+import {MeContainer} from "components/textCentered/textCenteredStyles";
 
 const TextCentered = () => {
     return (
