@@ -9,7 +9,7 @@ import {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme } from "styles/themes"
 
 const Layout = () => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
     const heroRef = useRef()
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const Layout = () => {
 
     const onScroll =  () => {
         const heroPos= heroRef.current.getBoundingClientRect().bottom;
-        (heroPos < 0 ) ? setTheme('dark') : setTheme('light')
+        (heroPos < 0 ) ? setTheme('light') : setTheme('dark')
     }
 
     return (
