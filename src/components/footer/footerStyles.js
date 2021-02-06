@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
 
 export const FooterTitle = styled.h3`
   font-size: 30px;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   
   @media (min-width: ${breakpoints.$screenMinSm}) {
     font-size: 60px;

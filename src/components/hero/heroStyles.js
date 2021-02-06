@@ -3,7 +3,7 @@ import breakpoints from "styles/breakpoints"
 
 export const HeroContainer = styled.section`
   padding-top: 270px;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
   
   @media (min-width: ${breakpoints.$screenMinMd}) {
     padding-top: 300px;

@@ -12,6 +12,12 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Inter, Arial, sans-serif;
     margin: 0;
     transition: all .8s;
+    font-size: 16px;
+  }
+  
+  p{
+    line-height: 1.6;
+    color: ${({ theme }) => theme.text};
   }
   
   a {
