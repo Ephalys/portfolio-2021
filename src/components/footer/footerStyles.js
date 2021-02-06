@@ -19,6 +19,7 @@ export const FooterTitle = styled.h3`
 export const Mail = styled.a`
   margin: 0;
   font-size: 16px;
+  color: ${({ theme }) => theme.paragraphs};
 
   @media (min-width: ${breakpoints.$screenMinSm}) {
     font-size: 24px;

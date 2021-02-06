@@ -8,7 +8,7 @@ const Story = () => {
                 My story
             </StoryTitle>
             <StoryText>
-                Before all this, I was full-stack developer at Subskill and for them I have worked on projects involving several fields, from luxury fashion brands to banks, from public services to health insurance, to major retail distributors and ecommerce.
+                Before this, I was full-stack developer at Subskill and for them I have worked on projects involving several fields, from luxury fashion brands to banks, from public services to health insurance, to major retail distributors and ecommerce.
             </StoryText>
         </StoryContainer>
     );
