@@ -22,6 +22,10 @@ export const GlobalStyle = createGlobalStyle`
   
   a {
     text-decoration: none;
+    transition: all .4s;
+    &:hover {
+      transition: all .4s;
+    }
   }
   
   .container {

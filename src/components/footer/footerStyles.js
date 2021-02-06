@@ -20,6 +20,10 @@ export const Mail = styled.a`
   margin: 0;
   font-size: 16px;
   color: ${({ theme }) => theme.paragraphs};
+  
+  &:hover {
+    color: ${({ theme }) => theme.text};
+  }
 
   @media (min-width: ${breakpoints.$screenMinSm}) {
     font-size: 24px;
