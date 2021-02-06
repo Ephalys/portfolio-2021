@@ -1,10 +1,7 @@
 import styled from "styled-components"
 import breakpoints from "styles/breakpoints"
-import colors from "styles/colors"
 
 export const FooterContainer = styled.footer`
-  background-color: ${colors.white};
-  color: ${colors.black};
   padding-top: 200px;
   padding-bottom: 200px;
 `

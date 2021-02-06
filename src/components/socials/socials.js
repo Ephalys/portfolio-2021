@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useEffect, useContext} from 'react';
 import Linkedin from "../../images/icon-linkedin.svg";
 import Spotify from "../../images/icon-spotify.svg";
 import Mail from "../../images/icon-email.svg";
 import Git from "../../images/icon-github.svg";
 import {Link, SocialContainer} from "./socialsStyles"
 import colors from "styles/colors";
+import { ThemeContext } from 'styled-components';
 
-const Socials = () => {
+const Socials = (props) => {
+    const themeContext = useContext(ThemeContext);
+
     const links = [
         {
             icon: Linkedin,
@@ -38,7 +41,7 @@ const Socials = () => {
                     <link.icon
                         width={16}
                         height={16}
-                        fill={colors.white}
+                        fill={themeContext.text}
                     />
                 </Link>
             ))}
