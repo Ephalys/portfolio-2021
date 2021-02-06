@@ -18,9 +18,9 @@ export const SocialContainer = styled.nav`
 
 export const Link = styled.a`
   padding: 15px 0;
-  transition: padding .5s;
+  transition: padding .3s;
   &:hover {
     padding-left: 10px;
-    transition: padding .5s;
+    transition: padding .3s;
   }
 `
