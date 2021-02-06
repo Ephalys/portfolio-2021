@@ -6,7 +6,6 @@ const IndexPage = () => {
     return (
         <>
             <Helmet>
-                <meta charSet="utf-8" />
                 <title>Léon Tran-Van — Front-end developer</title>
                 <link rel="canonical" href="http://nvnrtnl.vercel.app" />
                 <meta name="description" content="The work of front-end developer Léon Tran-Van." />
