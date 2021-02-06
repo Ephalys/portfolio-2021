@@ -2,16 +2,12 @@ import styled from "styled-components"
 import breakpoints from "styles/breakpoints"
 
 export const HeroContainer = styled.section`
-  padding-top: 270px;
+  padding-top: 300px;
   padding-bottom: 200px;
-  
-  @media (min-width: ${breakpoints.$screenMinMd}) {
-    padding-top: 300px;
-  }
 `
 
 export const MainTitle = styled.h1`
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   margin: 0;
 

@@ -7,7 +7,9 @@ import {GlobalStyle} from "components/layout/layoutStyles";
 import Footer from "components/footer/footer";
 import {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme } from "styles/themes"
-import Story from "components/Story/story";
+import Story from "components/story/story";
+import Me from "components/me/me";
+import SingleImage from "components/SingleImage/SingleImage";
 
 const Layout = () => {
     const [theme, setTheme] = useState('dark');
@@ -30,6 +32,8 @@ const Layout = () => {
                 <Socials/>
                 <Hero innerRef={heroRef}/>
                 <Story/>
+                <SingleImage alt="portrait" filename="portrait-1.png"/>
+                <Me/>
                 <Footer/>
             </main>
         </ThemeProvider>

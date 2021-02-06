@@ -13,11 +13,16 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     transition: all .8s;
     font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
   }
   
   p{
-    line-height: 1.6;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.paragraphs};
+    margin: 0;
   }
   
   a {

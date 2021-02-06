@@ -2,17 +2,15 @@ import styled from "styled-components"
 import breakpoints from "styles/breakpoints"
 
 export const StoryContainer = styled.section`
-`
-
-export const StoryTitle = styled.h2`
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+    padding-bottom: 200px;
 `
 
 export const StoryText = styled.p`
   color: ${({ theme }) => theme.paragraphs};
+  
+  &:first-of-type {
+    margin: 0 0 15px;
+  }
   
   @media (min-width: ${breakpoints.$screenMinXs}) {
     max-width: 80%;
