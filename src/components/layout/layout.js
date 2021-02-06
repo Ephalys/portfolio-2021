@@ -9,7 +9,7 @@ import {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme } from "styles/themes"
 import Story from "components/story/story";
 import TextCentered from "components/textCentered/textCentered";
-import SingleImage from "components/SingleImage/SingleImage";
+import SingleImage from "components/singleImage/SingleImage";
 
 const Layout = () => {
     const [theme, setTheme] = useState('dark');
