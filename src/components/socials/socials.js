@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
-import Linkedin from "../../images/icon-linkedin.svg";
-import Spotify from "../../images/icon-spotify.svg";
-import Mail from "../../images/icon-email.svg";
-import Git from "../../images/icon-github.svg";
+import Linkedin from "../../icons/icon-linkedin.svg";
+import Spotify from "../../icons/icon-spotify.svg";
+import Mail from "../../icons/icon-email.svg";
+import Git from "../../icons/icon-github.svg";
 import {Link, SocialContainer} from "./socialsStyles"
 import { ThemeContext } from 'styled-components';
 
