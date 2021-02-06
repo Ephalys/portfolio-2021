@@ -25,6 +25,15 @@ module.exports = {
           include: /images/
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `portfolio-2021`,
+        short_name: `portfolio-2021`,
+        start_url: `/`,
+        icon: 'src/images/favicon.png'
+      },
+    },
   ],
 };
