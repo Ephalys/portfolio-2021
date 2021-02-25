@@ -1,6 +1,6 @@
 import React from 'react';
 import "fontsource-inter/400.css"
-import "fontsource-inter/700.css"
+import "fontsource-inter/600.css"
 import Socials from "components/socials/socials";
 import {GlobalStyle} from "components/layout/layoutStyles";
 import Footer from "components/footer/footer";

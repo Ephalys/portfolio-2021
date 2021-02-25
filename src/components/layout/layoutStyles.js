@@ -36,6 +36,8 @@ export const GlobalStyle = createGlobalStyle`
   .container {
     padding-left: 30px;
     padding-right: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
 
     @media (min-width: ${breakpoints.$screenMinSm}) {
       padding-right: 120px;

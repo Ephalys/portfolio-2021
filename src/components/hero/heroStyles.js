@@ -18,7 +18,7 @@ export const MainTitle = styled.h1`
     font-size: 60px;
   }
   @media (min-width: ${breakpoints.$screenMinLg}) {
-    font-size: 90px;
+    font-size: 80px;
   }
 `
 
@@ -35,6 +35,6 @@ export const SecondaryTitle = styled.h2`
     font-size: 60px;
   }
   @media (min-width: ${breakpoints.$screenMinLg}) {
-    font-size: 90px;
+    font-size: 80px;
   }
 `
