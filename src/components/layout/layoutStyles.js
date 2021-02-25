@@ -39,9 +39,14 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1280px;
     margin: 0 auto;
 
-    @media (min-width: ${breakpoints.$screenMinSm}) {
+    @media (min-width: ${breakpoints.$screenMinMd}) {
       padding-right: 120px;
       padding-left: 180px;
+    }
+    
+    @media (min-width: ${breakpoints.$screenMinLg}) {
+      padding-right: 30px;
+      padding-left: 30px;
     }
   }
 `
