@@ -27,7 +27,7 @@ Then, I was full-stack developer at Subskill and for them I have worked on proje
     const onScroll =  () => {
         const heroPos = heroRef.current.getBoundingClientRect().bottom;
         heroPos < 300 ? setTheme('light') : setTheme('dark');
-        window.innerHeight + window.scrollY >= document.body.offsetHeight ? setIsArrowVisible(false) : setIsArrowVisible(true);
+        window.innerHeight + window.scrollY >= document.body.offsetHeight && setIsArrowVisible(false)
     }
 
     return (
