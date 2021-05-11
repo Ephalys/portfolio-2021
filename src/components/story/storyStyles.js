@@ -3,16 +3,20 @@ import breakpoints from "styles/breakpoints"
 
 export const StoryContainer = styled.section`
   padding-bottom: 100px;
-
+  padding-top: 100px;
+  background-color: ${props => props.backgroundColor || 'transparent'};
+  
   @media (min-width: ${breakpoints.$screenMinSm}) {
     padding-bottom: 200px;
+    padding-top: 200px;
   }
 
 `
 
 export const StoryText = styled.p`
   color: ${({ theme }) => theme.paragraphs};
-
+  white-space: pre-wrap;
+  
   &:first-of-type {
     margin: 0 0 15px;
   }
