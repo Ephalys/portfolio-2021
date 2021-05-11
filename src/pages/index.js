@@ -9,6 +9,7 @@ import TextCentered from "components/textCentered/textCentered";
 const IndexPage = () => {
 
     const [theme, setTheme] = useState('dark');
+    const [isArrowVisible, setIsArrowVisible] = useState(true);
     const heroRef = useRef()
 
     useEffect(() => {
@@ -17,8 +18,9 @@ const IndexPage = () => {
     })
 
     const onScroll =  () => {
-        const heroPos= heroRef.current.getBoundingClientRect().bottom;
-        (heroPos < 300 ) ? setTheme('light') : setTheme('dark')
+        const heroPos = heroRef.current.getBoundingClientRect().bottom;
+        heroPos < 300 ? setTheme('light') : setTheme('dark');
+        window.innerHeight + window.scrollY >= document.body.offsetHeight ? setIsArrowVisible(false) : setIsArrowVisible(true);
     }
 
     return (
@@ -28,7 +30,7 @@ const IndexPage = () => {
                 <link rel="canonical" href="http://nvnrtnl.vercel.app" />
                 <meta name="description" content="The work of front-end developer Léon Tran-Van." />
             </Helmet>
-            <Layout theme={theme}>
+            <Layout theme={theme} isArrowVisible={isArrowVisible}>
                 <Hero innerRef={heroRef}/>
                 <Story/>
                 <SingleImage alt="portrait" filename="portrait.png"/>

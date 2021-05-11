@@ -2,15 +2,15 @@ import styled from "styled-components"
 import breakpoints from "styles/breakpoints"
 
 export const ScrollIconContainer = styled.aside`
-  position: absolute;
-  bottom: 30px;
+  position: fixed;
+  bottom: 45px;
   z-index: 999;
   display: flex;
-  width: 80px;
+  width: 74px;
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: ${breakpoints.$screenMinSm}) {
-    position: fixed;
+  @media (max-width: ${breakpoints.$screenMaxMd}) {
+    display: none;
   }
 `

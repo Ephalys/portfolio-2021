@@ -1,14 +1,12 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import Linkedin from "../../icons/icon-linkedin.svg";
 import Spotify from "../../icons/icon-spotify.svg";
 import Mail from "../../icons/icon-email.svg";
 import Git from "../../icons/icon-github.svg";
 import {Link, SocialContainer} from "./socialsStyles"
-import { ThemeContext } from 'styled-components';
 import Icon from "components/icon/icon";
 
 const Socials = () => {
-    const themeContext = useContext(ThemeContext);
 
     const links = [
         {

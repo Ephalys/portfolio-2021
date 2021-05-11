@@ -14,7 +14,7 @@ const Layout = (props) => {
             <GlobalStyle/>
             <main>
                 <Socials/>
-                <ScrollIcon/>
+                {props.isArrowVisible && <ScrollIcon/>}
                 {props.children}
                 <Footer/>
             </main>
