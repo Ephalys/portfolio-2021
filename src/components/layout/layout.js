@@ -6,6 +6,7 @@ import {GlobalStyle} from "components/layout/layoutStyles";
 import Footer from "components/footer/footer";
 import {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme } from "styles/themes"
+import ScrollIcon from "components/scrollIcon/scrollIcon";
 
 const Layout = (props) => {
     return (
@@ -13,7 +14,8 @@ const Layout = (props) => {
             <GlobalStyle/>
             <main>
                 <Socials/>
-                    {props.children}
+                <ScrollIcon/>
+                {props.children}
                 <Footer/>
             </main>
         </ThemeProvider>

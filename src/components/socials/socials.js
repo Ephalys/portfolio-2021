@@ -5,6 +5,7 @@ import Mail from "../../icons/icon-email.svg";
 import Git from "../../icons/icon-github.svg";
 import {Link, SocialContainer} from "./socialsStyles"
 import { ThemeContext } from 'styled-components';
+import Icon from "components/icon/icon";
 
 const Socials = () => {
     const themeContext = useContext(ThemeContext);
@@ -37,10 +38,8 @@ const Socials = () => {
                     rel="noreferrer"
                     key={i}
                 >
-                    <link.icon
-                        width={16}
-                        height={16}
-                        fill={themeContext.text}
+                    <Icon
+                        icon={link.icon}
                     />
                 </Link>
             ))}
