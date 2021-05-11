@@ -15,8 +15,8 @@ export const StyledIcon = styled.div`
   }
 
   @keyframes arrowAnimation {
-    0% {transform: translateY(-100%); opacity: 0}
-    70% {transform: translateY(110%); opacity: 1}
+    0% {transform: translateY(-100%); opacity: 1}
+    70% {transform: translateY(110%); opacity: 0}
     100% {transform: translateY(110%)}
   }
   svg {
