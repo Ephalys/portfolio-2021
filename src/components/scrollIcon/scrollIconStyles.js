@@ -13,4 +13,8 @@ export const ScrollIconContainer = styled.aside`
   @media (max-width: ${breakpoints.$screenMaxMd}) {
     display: none;
   }
+  
+  svg {
+    height: 30px;
+  }
 `
