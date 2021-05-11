@@ -9,12 +9,9 @@ export const ScrollIconContainer = styled.aside`
   width: 74px;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 
   @media (max-width: ${breakpoints.$screenMaxMd}) {
     display: none;
-  }
-  
-  svg {
-    height: 30px;
   }
 `
