@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import breakpoints from "styles/breakpoints"
+import colors from "styles/colors"
 
 export const SocialContainer = styled.nav`
   position: absolute;
@@ -18,9 +19,13 @@ export const SocialContainer = styled.nav`
 
 export const Link = styled.a`
   padding: 15px 0;
-  transition: padding .3s;
+  svg {
+    transition: fill .3s;
+  }
   &:hover {
-    padding-left: 10px;
-    transition: padding .3s;
+    svg {
+      fill: ${colors.lightgrey};
+      transition: fill .3s;
+    }
   }
 `
