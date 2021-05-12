@@ -7,13 +7,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.body};
+    background: ${({ theme }) => theme.primaryBackground};
     color: ${({ theme }) => theme.title};
     font-family: Inter, Arial, sans-serif;
     margin: 0;
     transition: all .8s;
     font-size: 16px;
     line-height: 1.6;
+    animation: bodyAnimation 3s ease infinite;
+    background-size: 400% 400%;
+  }
+
+  @keyframes bodyAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
   }
   
   h1, h2, h3, h4, h5, h6 {

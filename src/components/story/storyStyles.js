@@ -4,7 +4,7 @@ import breakpoints from "styles/breakpoints"
 export const StoryContainer = styled.section`
   padding-bottom: 100px;
   padding-top: 100px;
-  background-color: ${props => props.backgroundColor || 'transparent'};
+  background: ${props => props.backgroundColor || 'transparent'};
   
   @media (min-width: ${breakpoints.$screenMinSm}) {
     padding-bottom: 200px;

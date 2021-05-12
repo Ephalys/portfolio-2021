@@ -7,7 +7,7 @@ const Icon = (props) => {
 
     return (
         <StyledIcon>
-            <props.icon fill={themeContext.text}/>
+            <props.icon fill={themeContext.title}/>
         </StyledIcon>
     );
 };
