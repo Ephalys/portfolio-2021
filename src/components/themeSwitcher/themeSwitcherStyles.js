@@ -41,12 +41,14 @@ export const CircleSwitcher = styled.div`
     border-radius: 50%;
     background-image: linear-gradient(to right, #66ff00, #a80077);
     z-index: -1;
-    transition: opacity 0.3s linear;
+    transition: all .8s;
     opacity: 0;
   }
 
   &:hover:before {
     opacity: 1;
+    transform: scale(1.4);
+    transition: all 0.4s;
   }
 
   @media (max-width: ${breakpoints.$screenMaxMd}) {
