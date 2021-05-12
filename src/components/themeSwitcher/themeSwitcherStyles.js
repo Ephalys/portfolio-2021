@@ -21,9 +21,10 @@ export const CircleSwitcher = styled.div`
     top: -12px;
     left: -12px;
     background: transparent;
-    border: 2px solid ${({theme}) => theme.paragraph};
+    border: 2px solid ${({theme}) => theme.title};
     border-radius: 50%;
     animation: switcherAnimation 1s infinite;
+    z-index: -2;
   }
   
   @keyframes switcherAnimation {
