@@ -33,6 +33,10 @@ export const CircleSwitcher = styled.div`
   }
 
   @media (max-width: ${breakpoints.$screenMaxMd}) {
-    display: none;
+    position: absolute;
+    bottom: unset;
+    top: 45px;
+    right: 30px;
+    left: unset;
   }
 `
