@@ -17,5 +17,6 @@ export const SocialContainer = styled.nav`
 `
 
 export const Link = styled.a`
-  padding: 15px 0;
+  padding: 5px;
+  margin: 10px 0;
 `
