@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
     font-family: Inter, Arial, sans-serif;
     margin: 0;
     transition: all .8s;
@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   p{
-    color: ${({ theme }) => theme.paragraphs};
+    color: ${({ theme }) => theme.paragraph};
     margin: 0;
   }
   

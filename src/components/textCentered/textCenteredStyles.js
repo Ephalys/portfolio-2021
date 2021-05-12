@@ -5,7 +5,7 @@ export const MeContainer = styled.section`
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  color: ${({ theme }) => theme.paragraphs};
+  color: ${({ theme }) => theme.paragraph};
 
   @media (min-width: ${breakpoints.$screenMinSm}) {
     padding-top: 200px;

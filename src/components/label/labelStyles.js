@@ -6,5 +6,5 @@ export const LabelTitle = styled.h2`
   letter-spacing: 4px;
   text-transform: uppercase;
   margin: 0 0 15px;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.title};
 `

@@ -7,6 +7,7 @@ import Footer from "components/footer/footer";
 import {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme } from "styles/themes"
 import ScrollIcon from "components/scrollIcon/scrollIcon";
+import ThemeSwitcher from "components/themeSwitcher/themeSwitcher";
 
 const Layout = (props) => {
     return (
@@ -15,6 +16,7 @@ const Layout = (props) => {
             <main>
                 <Socials/>
                 {props.isArrowVisible && <ScrollIcon/>}
+                <ThemeSwitcher/>
                 {props.children}
                 <Footer/>
             </main>

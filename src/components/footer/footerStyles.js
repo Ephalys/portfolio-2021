@@ -19,10 +19,10 @@ export const FooterTitle = styled.h3`
 export const Mail = styled.a`
   margin: 0;
   font-size: 16px;
-  color: ${({ theme }) => theme.paragraphs};
+  color: ${({ theme }) => theme.paragraph};
   
   &:hover {
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.title};
   }
 
   @media (min-width: ${breakpoints.$screenMinSm}) {
