@@ -14,7 +14,7 @@ export const StoryContainer = styled.section`
 `
 
 export const StoryText = styled.p`
-  color: ${({ theme }) => theme.paragraph};
+  color: ${props => props.backgroundColor ? props.theme.secondaryParagraph : props.theme.paragraph};
   white-space: pre-wrap;
   
   &:first-of-type {

@@ -3,7 +3,7 @@ import {LabelTitle} from "components/label/labelStyles";
 
 const Label = (props) => {
     return (
-        <LabelTitle>
+        <LabelTitle backgroundColor={props.backgroundColor} theme={props.theme}>
             {props.children}
         </LabelTitle>
     );
