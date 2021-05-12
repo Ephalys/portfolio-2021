@@ -13,7 +13,24 @@ export const CircleSwitcher = styled.div`
   cursor: pointer;
   transition: all .3s;
   background-size: 1px 200px;
-
+  &:after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    background: transparent;
+    border: 2px solid ${({theme}) => theme.paragraph};
+    border-radius: 50%;
+    animation: switcherAnimation 1s infinite;
+  }
+  
+  @keyframes switcherAnimation {
+    0%{transform: scale(0)}
+    100%{transform: scale(1); opacity: 0.1}
+  }
+  
   &:before {
     position: absolute;
     content: "";
