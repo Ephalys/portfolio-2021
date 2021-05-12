@@ -25,6 +25,6 @@ export const themes = {
         title: colors.white,
         secondaryTitle: colors.black,
         paragraph: colors.white,
-        secondaryParagraph: colors.black
+        secondaryParagraph: colors.lightgrey
     }
 }
