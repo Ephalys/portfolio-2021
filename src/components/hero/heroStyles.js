@@ -3,7 +3,6 @@ import breakpoints from "styles/breakpoints"
 
 export const HeroContainer = styled.section`
   padding-top: 300px;
-  padding-bottom: 100px;
 `
 
 export const MainTitle = styled.h1`

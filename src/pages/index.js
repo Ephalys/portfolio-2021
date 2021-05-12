@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect, useContext} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import Helmet from "react-helmet";
 import Layout from "components/layout/layout";
 import Hero from "components/hero/hero";
