@@ -75,10 +75,12 @@ export const SwitcherLabel = styled.span`
   border-radius: 25px;
   font-size: 14px;
   opacity: 0;
+  visibility: hidden;
   transition: all .5s;
   
-  ${SwitcherContainer}:hover & {
+  ${CircleSwitcher}:hover + & {
     opacity: 1;
+    visibility: visible;
     transition: all .4s;
     transform: translate(0, -50%);
   }
