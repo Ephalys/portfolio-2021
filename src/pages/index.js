@@ -16,7 +16,7 @@ const IndexPage = () => {
     
 Then, I was full-stack developer at Subskill and for them I have worked on projects involving several fields, from luxury fashion brands to banks, from public services to health insurance, to major retail distributors and ecommerce.`;
     const titleWork = 'Workflow';
-    const textWork = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`;
+    const textWork = <>I'm always taking advantage of new technologies and current design trends in order to deliver the perfect product to my clients. That's why <a href="https://jamstack.wtf" target="_blank" rel="noreferrer">JAMstack</a> takes an important part in my workflow.</>;
 
     useEffect(() => {
         window.addEventListener('scroll', onScroll, { passive: true });
@@ -41,8 +41,8 @@ Then, I was full-stack developer at Subskill and for them I have worked on proje
                     <Hero innerRef={heroRef}/>
                     <Story title={titleStory} text={textStory}/>
                     <SingleImage alt="portrait" filename="portrait.png"/>
-                    <TextCentered/>
-                    <Story title={titleWork} text={textWork} backgroundColor={themes[theme].secondaryBackground}/>
+                    <Story title={titleWork} text={textWork}/>
+                    <TextCentered backgroundColor={themes[theme].secondaryBackground}/>
                 </Layout>
             </ThemeProvider>
         </>
