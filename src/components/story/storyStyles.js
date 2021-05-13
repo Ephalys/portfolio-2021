@@ -46,7 +46,6 @@ export const Stacks = styled.div`
   flex-wrap: wrap;
 
   @media (min-width: ${breakpoints.$screenMinSm}) {
-    max-width: 50%;
     flex-wrap: nowrap;
   }
 `

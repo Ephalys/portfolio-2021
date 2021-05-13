@@ -14,38 +14,38 @@ const Story = (props) => {
     const theme = useContext(ThemeContext);
     const stacks = [
         {
+            name: 'Vuejs',
             icon: VueJs,
-            url: "https://www.linkedin.com/in/leon-tran-van/",
             width: 30,
-            height: 30
+            height: 30,
         },
         {
+            name: 'Gatsbyjs',
             icon: GatsbyJS,
-            url: "https://open.spotify.com/user/ephalys?si=UhyBFbz4S7qeLkMAkjliDg",
             width: 30,
             height: 30
         },
         {
+            name: 'Reactjs',
             icon: ReactJs,
-            url: "nvnrtnl@gmail.com",
             width: 30,
             height: 30
         },
         {
+            name: 'Vercel',
             icon: Vercel,
-            url: "https://github.com/ephalys",
             width: 30,
             height: 30
         },
         {
+            name: 'Netlify',
             icon: Netlify,
-            url: "https://github.com/ephalys",
             width: 30,
             height: 30
         },
         {
+            name: 'Styled components',
             icon: StyledComponents,
-            url: "https://github.com/ephalys",
             width: 60,
             height: 60
         }
