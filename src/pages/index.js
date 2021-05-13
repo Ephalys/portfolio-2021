@@ -41,7 +41,7 @@ Then, I was full-stack developer at Subskill and for them I have worked on proje
                     <Hero innerRef={heroRef}/>
                     <Story title={titleStory} text={textStory}/>
                     <SingleImage alt="portrait" filename="portrait.png"/>
-                    <Story title={titleWork} text={textWork}/>
+                    <Story title={titleWork} text={textWork} stacks/>
                     <TextCentered backgroundColor={themes[theme].secondaryBackground}/>
                 </Layout>
             </ThemeProvider>

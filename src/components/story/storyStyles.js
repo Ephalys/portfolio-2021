@@ -33,3 +33,21 @@ export const StoryText = styled.p`
     max-width: 50%;
   }
 `
+
+export const StacksContainer = styled.div`
+    margin-top: 60px;
+`
+
+
+export const Stacks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: ${breakpoints.$screenMinSm}) {
+    max-width: 50%;
+    flex-wrap: nowrap;
+  }
+`
+
