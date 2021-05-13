@@ -26,8 +26,8 @@ export const StyledIcon = styled.div`
     overflow: visible;
 
     @media (min-width: ${breakpoints.$screenMinLg}) {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
     }
 
     ${Link}:hover & {
