@@ -6,6 +6,14 @@ export const SwitcherContainer = styled.div`
   bottom: 45px;
   left: 30px;
   z-index: 999;
+
+  @media (max-width: ${breakpoints.$screenMaxSm}) {
+    position: absolute;
+    bottom: unset;
+    top: 45px;
+    right: 30px;
+    left: unset;
+  }
 `
 
 export const CircleSwitcher = styled.div`
@@ -52,14 +60,6 @@ export const CircleSwitcher = styled.div`
     opacity: 1;
     transform: scale(1.4);
     transition: all 0.4s;
-  }
-
-  @media (max-width: ${breakpoints.$screenMaxMd}) {
-    position: absolute;
-    bottom: unset;
-    top: 45px;
-    right: 30px;
-    left: unset;
   }
 `
 

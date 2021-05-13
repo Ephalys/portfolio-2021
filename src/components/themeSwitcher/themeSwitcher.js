@@ -6,11 +6,7 @@ const ThemeSwitcher = (props) => {
     const theme = useContext(ThemeContext);
 
     const changeTheme = (theme) => {
-        if(theme.name === 'light' || theme.name === 'dark') {
-            props.setTheme('rainbow')
-        } else {
-            props.setTheme('dark')
-        }
+        theme.name === 'light' || theme.name === 'dark' ? props.setTheme('rainbow') : props.setTheme('dark');
     }
 
     return (
