@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import breakpoints from "styles/breakpoints"
+import colors from "styles/colors"
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -36,7 +37,9 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     transition: all .4s;
+    color: ${colors.violet};
     &:hover {
+      color: ${colors.darkViolet};
       transition: all .4s;
     }
   }
