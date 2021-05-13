@@ -15,27 +15,39 @@ const Story = (props) => {
     const stacks = [
         {
             icon: VueJs,
-            url: "https://www.linkedin.com/in/leon-tran-van/"
+            url: "https://www.linkedin.com/in/leon-tran-van/",
+            width: 30,
+            height: 30
         },
         {
             icon: GatsbyJS,
-            url: "https://open.spotify.com/user/ephalys?si=UhyBFbz4S7qeLkMAkjliDg"
+            url: "https://open.spotify.com/user/ephalys?si=UhyBFbz4S7qeLkMAkjliDg",
+            width: 30,
+            height: 30
         },
         {
             icon: ReactJs,
-            url: "nvnrtnl@gmail.com"
+            url: "nvnrtnl@gmail.com",
+            width: 30,
+            height: 30
         },
         {
             icon: Vercel,
-            url: "https://github.com/ephalys"
+            url: "https://github.com/ephalys",
+            width: 30,
+            height: 30
         },
         {
             icon: Netlify,
-            url: "https://github.com/ephalys"
+            url: "https://github.com/ephalys",
+            width: 30,
+            height: 30
         },
         {
             icon: StyledComponents,
-            url: "https://github.com/ephalys"
+            url: "https://github.com/ephalys",
+            width: 60,
+            height: 60
         }
     ]
     return (
@@ -51,7 +63,7 @@ const Story = (props) => {
                 <StacksContainer>
                     <Stacks>
                         {stacks.map((stack,i) => (
-                            <Icon icon={stack.icon} width={30} height={30} key={i}/>
+                            <Icon icon={stack.icon} width={stack.width} height={stack.height} key={i}/>
                         ))}
                     </Stacks>
                 </StacksContainer>
