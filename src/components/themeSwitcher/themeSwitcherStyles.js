@@ -1,11 +1,14 @@
 import styled from "styled-components"
 import breakpoints from "styles/breakpoints"
 
-export const CircleSwitcher = styled.div`
+export const SwitcherContainer = styled.div`
   position: fixed;
   bottom: 45px;
   left: 30px;
   z-index: 999;
+`
+
+export const CircleSwitcher = styled.div`
   border-radius: 50%;
   background: ${({theme}) => theme.title};
   width: 15px;
@@ -41,7 +44,6 @@ export const CircleSwitcher = styled.div`
     left: 0;
     border-radius: 50%;
     background-image: linear-gradient(to right, #66ff00, #a80077);
-    z-index: -1;
     transition: all .8s;
     opacity: 0;
   }
@@ -58,5 +60,26 @@ export const CircleSwitcher = styled.div`
     top: 45px;
     right: 30px;
     left: unset;
+  }
+`
+
+export const SwitcherLabel = styled.span`
+  position: absolute;
+  left: calc(100% + 15px);
+  top: 50%;
+  transform: translate(-5px, -50%);
+  padding: 5px 15px;
+  background-color: ${({theme}) => theme.secondaryTitle};
+  color: ${({theme}) => theme.primaryBackground};
+  white-space: nowrap;
+  border-radius: 25px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all .5s;
+  
+  ${SwitcherContainer}:hover & {
+    opacity: 1;
+    transition: all .4s;
+    transform: translate(0, -50%);
   }
 `

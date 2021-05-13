@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {ThemeContext} from "styled-components";
-import {CircleSwitcher} from "components/themeSwitcher/themeSwitcherStyles";
+import {CircleSwitcher, SwitcherLabel, SwitcherContainer} from "components/themeSwitcher/themeSwitcherStyles";
 
 const ThemeSwitcher = (props) => {
     const theme = useContext(ThemeContext);
@@ -14,7 +14,12 @@ const ThemeSwitcher = (props) => {
     }
 
     return (
-        <CircleSwitcher onClick={() => changeTheme(theme)}/>
+        <SwitcherContainer>
+            <CircleSwitcher onClick={() => changeTheme(theme)}/>
+            <SwitcherLabel>
+                Wanna go fancy ?
+            </SwitcherLabel>
+        </SwitcherContainer>
     );
 };
 
