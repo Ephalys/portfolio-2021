@@ -16,7 +16,7 @@ const IndexPage = () => {
     
 Then, I was full-stack developer at Subskill and for them I have worked on projects involving several fields, from luxury fashion brands to banks, from public services to health insurance, to major retail distributors and ecommerce.`;
     const titleWork = 'Workflow';
-    const textWork = <>I'm always taking advantage of new technologies and current design trends in order to deliver the perfect product to my clients. That's why <a href="https://jamstack.wtf" target="_blank" rel="noreferrer">JAMstack</a> takes an important part in my workflow.</>;
+    const textWork = <>I'm always taking advantage of new technologies and current design trends in order to deliver the perfect product to my clients. That's why <a href="https://jamstack.wtf" target="_blank" rel="noreferrer">JAMstack</a> and <a href="https://figma.com" target="_blank" rel="noreferrer">Figma</a> take an important part in my workflow.</>;
 
     useEffect(() => {
         window.addEventListener('scroll', onScroll, { passive: true });
