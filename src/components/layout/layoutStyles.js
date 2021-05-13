@@ -54,10 +54,5 @@ export const GlobalStyle = createGlobalStyle`
       padding-right: 120px;
       padding-left: 180px;
     }
-    
-    @media (min-width: ${breakpoints.$screenMinLg}) {
-      padding-right: 30px;
-      padding-left: 30px;
-    }
   }
 `
