@@ -84,4 +84,8 @@ export const SwitcherLabel = styled.span`
     transition: all .4s;
     transform: translate(0, -50%);
   }
+
+  @media (max-width: ${breakpoints.$screenMaxSm}) {
+    display: none;
+  }
 `
