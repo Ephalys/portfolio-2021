@@ -36,7 +36,7 @@ const Socials = () => {
                     rel="noreferrer"
                     key={i}
                 >
-                    <Icon icon={link.icon} width={16} height={16}/>
+                    <Icon icon={link.icon} width={20} height={20}/>
                 </Link>
             ))}
         </SocialContainer>

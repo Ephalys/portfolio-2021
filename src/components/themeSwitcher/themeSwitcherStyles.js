@@ -19,18 +19,18 @@ export const SwitcherContainer = styled.div`
 export const CircleSwitcher = styled.div`
   border-radius: 50%;
   background: ${({theme}) => theme.title};
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
   transition: all .3s;
   background-size: 1px 200px;
   &:after {
     content: "";
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: -12px;
-    left: -12px;
+    top: -13px;
+    left: -13px;
     background: transparent;
     border: 2px solid ${({theme}) => theme.title};
     border-radius: 50%;
