@@ -35,11 +35,7 @@ export const StoryText = styled.p`
 `
 
 export const StacksContainer = styled.div`
-    margin-top: 100px;
-
-  @media (min-width: ${breakpoints.$screenMinSm}) {
-    margin-top: 60px;
-  }
+    margin-top: 30px;
 `
 
 
