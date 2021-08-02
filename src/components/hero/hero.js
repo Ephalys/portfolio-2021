@@ -5,7 +5,7 @@ const Hero = ({innerRef}) => {
     return (
         <HeroContainer className="container" ref={innerRef}>
             <MainTitle>
-                I am Léon Tran-Van.<br/>
+                Léon Tran-Van.<br/>
                 A web developer based in Paris.
             </MainTitle>
             <SecondaryTitle>
