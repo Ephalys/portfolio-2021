@@ -70,7 +70,7 @@ export const SwitcherLabel = styled.span`
   transform: translate(-5px, -50%);
   padding: 5px 15px;
   background-color: ${({theme}) => theme.themeSwitcherBackground};
-  color: ${({theme}) => theme.secondaryTitle};
+  color: ${({theme}) => theme.themeSwitcherText};
   white-space: nowrap;
   border-radius: 25px;
   font-size: 14px;
