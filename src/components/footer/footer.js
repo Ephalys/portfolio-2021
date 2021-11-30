@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <FooterContainer className="container">
             <FooterTitle>
-                Thank You.
+                Contact me
             </FooterTitle>
             <Mail href="mailto:nvnrtnl@gmail.com">
                 nvnrtnl@gmail.com
